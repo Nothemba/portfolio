@@ -1,0 +1,134 @@
+body{
+    text-align: center;
+}
+
+.container{
+display : grid;
+/*grid-template: repeat(auto-fill , 15rem) / repeat(auto-fill , 1fr);*/
+grid-auto-columns: 1fr;
+grid-auto-rows: 30rem 25rem 18rem 18rem;
+grid-gap: 10px;
+
+}
+.one{
+    background-image: url("pictures/workstation.jpg");
+    background-position: center center;
+    background-size: auto;
+    grid-column: 1 / 4;
+    margin-top: 0px;
+    padding: 10px;
+    
+}
+.two{
+    grid-column: 1/4;
+    background-color: beige;
+    
+
+}
+.three{
+   
+    background-image: url("pictures/key.jpg");
+    border-style: groove;
+}
+.four{
+    background-color : brown;
+    border-style:  groove;
+}
+.five{
+    
+    background-image: url("pictures/home.jpg");
+    border-style:  groove;
+}
+.six{
+  
+    background-image: url("pictures/smoke.jpg");
+    border-style:  groove;
+}
+.seven{
+    
+    background-image: url("pictures/img5.jpg");
+    border-style: groove;
+}
+.nine{
+    background-image: url("pictures/key.jpg");
+    border-style:  groove;
+}
+
+
+.eight{
+  
+    grid-column: 1 /  4;
+    background-image: url("pictures/len.jpg");
+
+    
+}
+div{
+    margin-block-start: 15px;
+    margin-block-end: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+
+}
+.navbar {
+    overflow: hidden;
+    background-color : transparent;
+    position: absolute;
+    bottom: 30%;
+    width: 50%;
+    margin-left:25%; 
+  
+    
+  }
+  
+  .navbar a {
+    
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px ;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1em;
+    line-height: 10px;
+    border: solid brown;
+    border-radius: 10px;
+    color:white;
+    border-bottom: 1px solid #888;
+   background-color: transparent;
+   margin-right:  30px;
+   
+}
+  
+  
+  .navbar a:hover {
+    background: #f1f1f1;
+    color: black;
+  }
+  
+  .navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .about{
+      text-align: center;
+      width: 60%;
+      margin: 0 auto;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  li{
+    list-style: none;
+  }
+  h2{ 
+      margin-bottom: 10px;
+}     text-align :right;
+hr{
+    color : brown;
+
+}
+.nothemba{
+    float: left;
+    height: 250px;
+    border-radius: 50%;
+}
