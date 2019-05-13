@@ -6,7 +6,7 @@ body{
 display : grid;
 /*grid-template: repeat(auto-fill , 15rem) / repeat(auto-fill , 1fr);*/
 grid-auto-columns: 1fr;
-grid-auto-rows: 30rem 25rem 18rem 18rem;
+grid-auto-rows: 30rem 25rem 4rem 18rem 18rem 35rem;
 grid-gap: 10px;
 
 }
@@ -27,16 +27,16 @@ grid-gap: 10px;
 }
 .three{
    
-    background-image: url("pictures/key.jpg");
-    border-style: groove;
+  grid-column: 1/4;
+    
 }
 .four{
-    background-color : brown;
+    background-image: url("pictures/img3.jpg");
     border-style:  groove;
 }
 .five{
-    
-    background-image: url("pictures/home.jpg");
+    background-color : brown;
+   ;
     border-style:  groove;
 }
 .six{
@@ -53,7 +53,7 @@ grid-gap: 10px;
     background-image: url("pictures/key.jpg");
     border-style:  groove;
 }
-
+.ten{ background-color: khaki}
 
 .eight{
   
@@ -122,13 +122,44 @@ div{
   }
   h2{ 
       margin-bottom: 10px;
-}     text-align :right;
-hr{
-    color : brown;
-
-}
+}     text-align:right
+line{ 
+    background-color: brown;
+    width: 50px;
+  }
 .nothemba{
     float: left;
     height: 250px;
     border-radius: 50%;
 }
+.projects{
+    width: 70%;
+    margin: 0px auto;
+}
+label{
+  color: white;
+  }
+  .contacts{
+      color: white;
+      font-weight: 300;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  .contactForm{
+      width: 50%;
+      margin: 0px auto; 
+  }
+  button{
+      background-color: brown;
+      width: 100px;
+      height: 50px;
+      border-radius: 10px;
+  }
