@@ -1,25 +1,39 @@
-body{text-align: center}
+
+body{text-align: center;
+  font-family: 'Montaga', serif;}
 .container{
 grid: true;
 display : grid;
 /*grid-template: repeat(auto-fill , 15rem) / repeat(auto-fill , 1fr);*/
-grid-auto-columns: 1fr;
-grid-auto-rows: 30rem 25rem 25rem 4rem 18rem 18rem 30rem;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 30rem 25rem 25rem 5rem 18rem 18rem 30rem;
+grid-auto-rows: 28rem;
 grid-gap: 10px;
 
 }
+.header-text{
+  height: 50%;
+  width: 70%;
+  border-radius: 50%;
+  padding-left: 25%;
+  padding-top: 5%;
+  font-size: 80px;
+  font-weight: 20%;
+  color:whitesmoke;
+}
 .one{
-    background-image: url("pictures/workstation.jpg");
+    background-image: url("pictures/laptop-3174729_1280.jpg");
     background-position: center center;
     background-size: auto;
     grid-column: 1 / 4;
     margin-top: 0px;
     padding: 10px;
+    height: 450px;
     
 }
 .two{
     grid-column: 1/4;
-    background-color: blanchedalmond;
+    background-image: url(pictures/background-992850_1280.png);
 
     
 
@@ -27,14 +41,16 @@ grid-gap: 10px;
 .three{
    
   grid-column: 1/4;
+
+  background-color: #fa255e;
  
 }
 .four{
     grid-column: 1/4;   
-    background-color: blanchedalmond;
+    background-color: #c39ea0;
 }
 .five{
-    background-color : khaki;
+    background-image: url(pictures/snowfall-201496_640.jpg);
     border-style:  groove;
 }
 .six{
@@ -51,13 +67,13 @@ grid-gap: 10px;
     background-image: url("pictures/key.jpg");
     border-style:  groove;
 }
-.ten{ background-color: brown;}
+.ten{ background-color:#c39ea0;}
 
 .eight{
   
     grid-column: 1 /  4;
     background-image: url("pictures/rain.jpg");
-   
+    height: 500px;
     
 }
 .elev{
@@ -73,11 +89,13 @@ div{
 }
 .navbar {
     overflow: hidden;
-    background-color : transparent;
     position: absolute;
-    bottom: 30%;
-    width: 50%;
-    margin-left:25%; 
+   
+    line-height: 7px; 
+    margin-top: 0px;
+    width: 100% auto;
+    margin-left: 55%;
+  
   
     
   }
@@ -86,18 +104,13 @@ div{
     
     display: inline-block;
     color: #f2f2f2;
-    text-align: center;
     padding: 20px ;
     text-decoration: none;
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.1em;
-    line-height: 10px;
-    border: solid white;;
-    border-radius: 10px;
     color:white;
-    background-color: transparent;
-    margin-right:  30px;
-   
+    background-color:#fa255e;
+    width: 12%;
+    border: 2px solid white;
+    border-radius: 10px;
 }
   
   
@@ -116,6 +129,7 @@ div{
       flex-direction: row;
       justify-content: space-evenly;
       width: 80%;
+      color: white;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   li{
@@ -123,19 +137,16 @@ div{
   }
   h2{ 
       margin-bottom: 10px;
-}     text-align:right
-line{ 
-    background-color: brown;
-    width: 5px;
-  }
+     
+      color: white;
+    } 
 
-.nothemba{
-    height: 280px;
-    border-radius: 50%;
-    float: left;
-    width: 50%;
-    margin-top: 1%;
-    margin-left: 25%;
+
+
+.mypic{
+  width: 250px;
+  height:250px ;
+  border-radius: 30px;
 }
 .projects{
     width: 70%;
@@ -164,17 +175,18 @@ label{
       
   }
   button{
-      background-color: brown;
+      background-color:white;
       width: 100px;
       height: 50px;
       border-radius: 10px;
+      margin: 10px;
   }
   .social{
-      background-color: bisque;
+      background-color: #fa255e;
       width:100%;
       margin-left: 0px;
       margin-right: 0px;
-      margin-bottom: 0px;
+      margin-top: 0px;
       height: 80px;
   }
   .social img{
@@ -191,23 +203,35 @@ label{
       align-content: flex-start;
       width: 100%;
   }
+  .header-text{
+    color: #c2898c;
+    font-size: 400%;
+  }
   figure{
-      width: 20%;
+      width: 10%;
   }
   .aboutpic {
-    background-color: #ff9e2c;
+    background-image: url(pictures/n.jpg);
+    background-repeat: no-repeat;
+    background-size: 450px 450px;
     float: left;
     width: 48%;
     height: 80%;
+    margin:10px;
     border-radius: 10px;
-
   }
   .aboutme {
-    background-color: #b6701e;
     float: right;
     width: 48%;
     height:80%;
     border-radius: 10px;
+    border-top: 5px;
+    color:white;
+    text-align: left;
    
   }
- 
+  @media only screen and (max-width: 600px){
+    .navbar{
+      display:block;
+    }
+  }
